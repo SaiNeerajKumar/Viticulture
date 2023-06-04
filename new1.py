@@ -78,13 +78,13 @@ def uploadDataset():
     global X2, Y2
 
     ds1 = np.load(
-        'C:/Users/pavan/OneDrive/Desktop/Final_project/X1feature.npy')
+        'X1feature.npy')
     ds1_label = np.load(
-        'C:/Users/pavan/OneDrive/Desktop/Final_project/dtst1_label.npy')
+        'dtst1_label.npy')
     ds2 = np.load(
-        'C:/Users/pavan/OneDrive/Desktop/Final_project/X2feature.npy')
+        'X2feature.npy')
     ds2_label = np.load(
-        'C:/Users/pavan/OneDrive/Desktop/Final_project/dtst2_label.npy')
+        'dtst2_label.npy')
 
     X1 = []
     Y1 = []
