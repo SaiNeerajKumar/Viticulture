@@ -381,18 +381,14 @@ def main():
         st.write("Machine learning and artificial intelligence are the technologies used to analyze large amounts of data and predict vineyard conditions and grape yields. This information can be used to optimize vineyard management practices and improve grape quality.")
 
     if choice == "📷 Upload Image":
-
-        uploaded_file =  cv2.VideoCapture(0)
+        uploaded_file = st.file_uploader(label="Upload an image", type=["jpg", "jpeg", "png"])
 
         # Check if an image has been uploaded
         if uploaded_file is not None:
-            frame = uploaded_file.read()
-
-            
-            # Convert the frame to PIL Image format
-            img = Image.fromarray(frame)
             # Display the uploaded image
-            st.image(img, caption="Captured Image", use_column_width=True)
+            img = Image.open(uploaded_file)
+            st.image(img, caption="Uploaded image", use_column_width=True)
+
 
             # Add a button to show the uploaded image
             if st.button("🔮🔍 Predict "):
