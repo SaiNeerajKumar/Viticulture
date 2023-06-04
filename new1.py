@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import sklearn
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import classification_report
