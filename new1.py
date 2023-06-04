@@ -382,13 +382,17 @@ def main():
 
     if choice == "📷 Upload Image":
 
-        uploaded_file = st.file_uploader(label="Upload an image", type=["jpg", "jpeg", "png"])
+        uploaded_file =  cv2.VideoCapture(0)
 
         # Check if an image has been uploaded
         if uploaded_file is not None:
+            ret, frame = uploaded_file.read()
+
+            if ret:
+            # Convert the frame to PIL Image format
+                img = Image.fromarray(frame)
             # Display the uploaded image
-            img = Image.open(uploaded_file)
-            st.image(img, caption="Uploaded image", use_column_width=True)
+                st.image(img, caption="Captured Image", use_column_width=True)
 
             # Add a button to show the uploaded image
             if st.button("🔮🔍 Predict "):
