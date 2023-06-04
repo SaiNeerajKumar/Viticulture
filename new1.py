@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import os
 from ultralytics import YOLO
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from tkinter.filedialog import askopenfilename
+
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
@@ -24,9 +24,8 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 import pandas as pd
 
-import warnings
 
-warnings.filterwarnings('ignore')
+
 
 global X1, Y1
 global X2, Y2
