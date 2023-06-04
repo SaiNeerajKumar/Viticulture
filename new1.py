@@ -386,13 +386,13 @@ def main():
 
         # Check if an image has been uploaded
         if uploaded_file is not None:
-            ret, frame = uploaded_file.read()
+            frame = uploaded_file.read()
 
-            if ret:
+            
             # Convert the frame to PIL Image format
-                img = Image.fromarray(frame)
+            img = Image.fromarray(frame)
             # Display the uploaded image
-                st.image(img, caption="Captured Image", use_column_width=True)
+            st.image(img, caption="Captured Image", use_column_width=True)
 
             # Add a button to show the uploaded image
             if st.button("🔮🔍 Predict "):
