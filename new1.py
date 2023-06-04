@@ -47,8 +47,8 @@ recall2=[]
 f1_score1=[]
 f1_score2=[]
 
-picture = Image.open("C:/Users/pavan/OneDrive/Desktop/Final_project/report _pics/vitic.png")
-st.image(picture,width=600)
+#picture = Image.open("C:/Users/pavan/OneDrive/Desktop/Final_project/report _pics/vitic.png")
+#st.image(picture,width=600)
 #st.title("Viticulture Solutions for you 🍇🍇")
 
 
