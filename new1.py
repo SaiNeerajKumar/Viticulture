@@ -395,10 +395,10 @@ def main():
                 st.header("Predict")
                 img1 = img
                 # Path to YOLO model weights
-                model_path = os.path.join('.', 'runs', 'detect', 'train7', 'weights', 'last.pt')
+                
 
                 # Load YOLO model
-                model = YOLO(model_path)
+                model = YOLO('last.pt')
 
                 # Detection threshold
                 threshold = 0.4
