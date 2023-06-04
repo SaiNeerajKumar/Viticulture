@@ -374,8 +374,8 @@ def main():
     if choice == "🏡 Home":
         st.subheader("Home")
         st.write("Viticulture is the science, study, and production of grapes. It is a branch of horticulture that focuses on cultivating grapevines, managing vineyards, and producing grapes for winemaking, juice production, and consumption as fresh fruit. viticulture involves a wide range of activities, including soil management, irrigation, pruning, trellising, pest and disease control, harvesting, and processing. Viticulturists also study grape varieties and their characteristics")
-        picture3 = Image.open("C:/Users/pavan/OneDrive/Desktop/Final_project/report _pics/bunch.jpg")
-        st.image(picture3, use_column_width=True)
+        #picture3 = Image.open("C:/Users/pavan/OneDrive/Desktop/Final_project/report _pics/bunch.jpg")
+        #st.image(picture3, use_column_width=True)
 
         st.write("Today, viticulturists use a combination of traditional and modern techniques to produce high-quality grapes and wines that are enjoyed around the world.")
         st.write("Machine learning and artificial intelligence are the technologies used to analyze large amounts of data and predict vineyard conditions and grape yields. This information can be used to optimize vineyard management practices and improve grape quality.")
