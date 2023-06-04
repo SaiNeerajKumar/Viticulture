@@ -9,7 +9,6 @@ from sklearn.model_selection import validation_curve
 import matplotlib.pyplot as plt
 import os
 from ultralytics import YOLO
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 import numpy as np
 from sklearn.linear_model import LogisticRegression
